@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       /* General Body and Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 10px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Top Section Styles */
+.top-section {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 30px; /* Increased padding */
+    border-bottom: 2px solid #ddd; /* Thicker border for separation */
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 220px; /* Increased width */
+    height: 220px; /* Increased height */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right {
+    flex: 2;
+    padding-left: 30px; /* Increased padding */
+}
+
+.right h2 {
+    margin: 30px 0 15px; /* Increased margins */
+    font-size: 28px; /* Larger font size */
+    color: #333;
+}
+
+.highlight {
+    font-size: 20px; /* Larger font size */
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px; /* Larger font size */
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #333;
+    color: #fff;
+    padding: 30px; /* Increased padding */
+    text-align: left;
+}
+
+.contact-section p {
+    margin: 10px 0; /* Increased margins */
+    font-size: 18px; /* Larger font size */
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section p i {
+    margin-right: 10px; /* Larger margin for icons */
+    color: #fff;
+    font-size: 22px; /* Larger icon size */
+}
+
+.contact-section a {
+    color: #ffcc00;
+    font-weight: bold; /* Bold link text */
+}
+
+/* Education Section Styles */
+.education-section {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 30px; /* Increased padding */
+    text-align: left;
+}
+
+.education-section p {
+    margin: 10px 0; /* Increased margins */
+    font-size: 18px; /* Larger font size */
+    line-height: 1.6;
+}
+
+.education-section h3 {
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.horizontal-scroll-section {
+            background-color: #e0e0e0;
+            padding: 20px;
+            white-space: nowrap;
+            overflow-x: auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .horizontal-scroll-section .section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 200px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .horizontal-scroll-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .skills div {
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#contact">Contact</a>
+            <a href="#education">Education</a>
+            <a href="#activities">Activities</a>
+        </div>
+        <div class="top-section">
+            <div class="left">
+                <img src="j.jpg" alt="Your Image">
+            </div>
+            <div class="right">
+                <h2>J E R U S H J A I S L I N J L</h2>
+                <div class="highlight">STUDENT | FREELANCER</div>
+                <div id="about-me" class="description">
+                    <h3>About Me</h3>
+                    <p>As a B.Tech student specializing in Artificial Intelligence and Data Science, I am passionate about leveraging advanced technologies to solve real-world problems. Additionally, I possess proficient video editing skills, enabling me to create compelling visual content. I have honed my skills as a freelance video editor and logo animator, creating visually compelling content for a diverse range of clients.</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact-section">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-phone"></i> 9003802477</p>
+            <p><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamilnadu</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jerush-jaislin-0975ab31b/" target="_blank">LinkedIn</a></p>
+            <p><i class="fas fa-envelope"></i> jerushjai12@gmail.com</p>
+            <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/jerush._.jaislin?igsh=cnp0anlndWZyYzUw&utm_source=qr" target="_blank">Instagram</a></p>
+        </div>
+        <div id="education" class="education-section">
+            <h3>Education</h3>
+            <p><strong>College:</strong> KPR Institute of Engineering and Technology (2022-2026)</p>
+            <p><strong>Schooling:</strong> National Model Matric Higher Secondary School (2020-2022)</p>
+        </div>
+        <div id="activities" class="horizontal-scroll-section">
+            <div class="section">
+                <h3>Internship</h3>
+                <p><strong>Krish Tec:</strong> 4 weeks Internship</p>
+            </div>
+            <div class="section">
+                <h3>Workshops</h3>
+                <p><strong>Introduction to software development:</strong> NIT Trichy</p>
+            </div>
+            <div class="section">
+                <h3>Certification</h3>
+                <ul>
+                    <li>Data Structures in C</li>
+                    <li>Video Editing Basics</li>
+                    <li>Introduction to Digital Marketing</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Skills</h3>
+                <div>Python</div>
+                <div>C Programming</div>
+                <div>Video Editing</div>
+                <div>Logo Animation</div>
+                <div>Digital Marketing</div>
+                <div>Machine Learning</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
